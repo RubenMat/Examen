@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name" translatable="false">Examen</string>
+    <string-array name="provincias">
+        <item>Bizkaia</item>
+        <item>Araba</item>
+        <item>Gipuzkoa</item>
+    </string-array>
+</resources>

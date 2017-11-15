@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecciona Provincia"
+        android:textSize="20dp"
+        android:id="@+id/lblProvincia"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinProvincias"
+        android:layout_toRightOf="@+id/lblProvincia"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinProvincias"
+        android:textSize="20dp"
+        android:text="Selecciona ubicacion"
+        android:id="@+id/lblUbicacion"
+        android:visibility="invisible"
+        />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/spinProvincias"
+        android:layout_toRightOf="@+id/lblUbicacion"
+        android:id="@+id/grupo2"
+        android:visibility="invisible">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Costa"
+            android:id="@+id/rbCosta"
+            android:checked="true"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Interior"
+            android:id="@+id/rbInterior"/>
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VISUALIZAR LISTA"
+        android:layout_below="@id/grupo2"
+        android:id="@+id/btnVisualizar"/>
+
+</RelativeLayout>

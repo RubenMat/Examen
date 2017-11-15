@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:id="@+id/lblAlgo"
+        android:textAlignment="center"
+        android:text="Selecciona el tipo de operaciones que deseas realizar"/>
+
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGrupo"
+        android:layout_below="@+id/lblAlgo">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="35dp"
+            android:text="Sumas"
+            android:id="@+id/rbSuma"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="Restas"
+            android:id="@+id/rbResta"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="Multiplicaciones"
+            android:id="@+id/rbMult"/>
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="EMPEZAR"
+        android:id="@+id/btnEmpezar"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/radioGrupo"/>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnEmpezar"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:id="@+id/lblOper"
+        android:background="@color/ejer1"
+        />
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/txtOper"
+        android:layout_toRightOf="@id/lblOper"
+        android:layout_below="@id/btnEmpezar"
+        android:inputType="number"
+        android:background="@color/ejer1"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_marginLeft="230dp"
+        android:text="EVALUAR"
+        android:id="@+id/btnEvaluar"
+        android:layout_below="@id/lblOper"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnEvaluar"
+        android:text="salir"
+        android:id="@+id/btnSalir"/>
+
+</RelativeLayout>
